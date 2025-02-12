@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="@ruhlanrzayev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruhlan Rzayev | Portfolio</title>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="assets/profile.jpg" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- SCSS -->
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="scss/responsive.scss">
+</head>
+
+<body>
+    <!-- Fixed Navigation -->
+    <div class="fixed">
+        <i class="fa-solid fa-angles-down" id="navigator"> </i>
+    </div>
+
+    <!-- Navbar Container -->
+    <div class="super-container" id="nav">
+        <div class="logo">
+            <span>Ruhlan Rzayev</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="bars-menu">
+            <i class="fas fa-bars hamburger-icon" onclick="barsMenu()"></i>
+        </div>
+        <div class="toggleMenu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Profile Container -->
+    <div id="profile">
+        <div class="image">
+            <img src="assets/profile.jpg" alt="profile">
+        </div>
+        <div class="text-content">
+            <span>It's</span>
+            <h1>Ruhlan Rzayev</h1>
+            <p>Frontend Developer</p>
+            <button class="btn" onclick="window.open('assets/ruhlanrzayevCV.pdf')">Download CV</button>
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="about-container" id="about">
+        <div class="top-text">
+            <span>Get to know more</span>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="text-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quasi aliquid explicabo, veniam beatae
+                    provident? Exercitationem accusamus suscipit tempore unde eius ratione molestias voluptatibus
+                    placeat, corporis tempora quod eum cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Illo quasi aliquid explicabo, veniam beatae
+                    provident? Exercitationem accusamus suscipit tempore unde eius ratione molestias voluptatibus
+                    placeat, corporis tempora quod eum cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Illo quasi aliquid explicabo, veniam beatae
+                    provident? Exercitationem accusamus suscipit tempore unde eius ratione molestias voluptatibus
+                    placeat, corporis tempora quod eum cupiditate.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/graduate.png" alt="education">
+                    <h3>Education</h3>
+                    <p>
+                        Lorem, ipsum dolor.
+                        <br>
+                        Lorem ipsum dolor sit.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/certificate.png" alt="certificate">
+                    <h3>Certificates</h3>
+                    <p>
+                        Lorem, ipsum dolor.
+                        <br>
+                        Lorem ipsum dolor sit.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="assets/experience.png" alt="experience">
+                    <h3>Experience</h3>
+                    <p>
+                        Lorem, ipsum dolor.
+                        <br>
+                        Lorem ipsum dolor sit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Container -->
+    <div class="experience-container" id="experience">
+        <div class="top-text">
+            <span>Explore my</span>
+            <h2>Experience</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col" id="html">
+                    <span>HTML</span>
+                    <img src="assets/html.webp" alt="html">
+                </div>
+                <div class="col" id="css">
+                    <span>CSS</span>
+                    <img src="assets/css.svg" alt="css">
+                </div>
+                <div class="col" id="sass">
+                    <span>SASS</span>
+                    <img src="assets/sass.png" alt="sass">
+                </div>
+                <div class="col" id="js">
+                    <span>JavaScript</span>
+                    <img src="assets/js.png" alt="js">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="bs">
+                    <span>Bootstrap</span>
+                    <img src="assets/bootstrap.png" alt="bs">
+                </div>
+                <div class="col" id="twc">
+                    <span>Tailwind CSS</span>
+                    <img src="assets/tailwind.png" alt="twc">
+                </div>
+                <div class="col" id="mongodb">
+                    <span>Mongo DB</span>
+                    <img src="assets/mongodb.webp" alt="mdb">
+                </div>
+                <div class="col" id="ejs">
+                    <span>Express JS</span>
+                    <img src="assets/express.png" alt="ejs">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="ts">
+                    <span>TypeScript</span>
+                    <img src="assets/typescript.png" alt="ts">
+                </div>
+                <div class="col" id="react">
+                    <span>React</span>
+                    <img src="assets/react.webp" alt="react">
+                </div>
+                <div class="col" id="njs">
+                    <span>Next JS</span>
+                    <img src="assets/nextjs.png" alt="njs">
+                </div>
+                <div class="col" id="jq">
+                    <span>jQuery</span>
+                    <img src="assets/jquery.png" alt="jq">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="nodejs">
+                    <span>Node JS</span>
+                    <img src="assets/nodejs.png" alt="nodejs">
+                </div>
+                <div class="col" id="npm">
+                    <span>npm</span>
+                    <img src="assets/npm.png" alt="npm">
+                </div>
+                <div class="col" id="git">
+                    <span>Git</span>
+                    <img src="assets/git.png" alt="git">
+                </div>
+                <div class="col" id="json">
+                    <span>JSON</span>
+                    <img src="assets/json.webp" alt="json">
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- Projects Container -->
+    <div class="projects-container" id="projects">
+    <div class="top-text">
+        <span>Browse My Recent</span>
+        <h2>Projects</h2>
+    </div>
+    <div class="content">
+        <div class="cards">
+            <div class="card">
+                <img src="assets/firstproject.png" alt="first project">
+                <h3>First Project</h3>
+                <div class="buttons">
+                    <button class="btn">Github</button>
+                    <button class="btn">Live Demo</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/secondproject.png" alt="second project">
+                <h3>Second Project</h3>
+                <div class="buttons">
+                    <button class="btn">Github</button>
+                    <button class="btn">Live Demo</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/thirdproject.png" alt="third project">
+                <h3>Third Project</h3>
+                <div class="buttons">
+                    <button class="btn">Github</button>
+                    <button class="btn">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact Container -->
+     <div class="contact-container" id="contact">
+        <div class="top-text">
+            <span>Get in touch</span>
+            <h2>Contact</h2>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/linkedin.png" alt="linkedin">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div class="card">
+                    <img src="assets/linkedin.png" alt="linkedin">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div class="card">
+                    <img src="assets/linkedin.png" alt="linkedin">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </div>
+            <form>
+                <div class="form">
+                    <input type="text" id="name" placeholder="Your name">
+                    <input type="email" id="email" placeholder="Your email">
+                    <input type="text" id="subject" placeholder="Subject">
+                    <textarea id="text" placeholder="Your text"></textarea>
+                </div>
+            </form>
+        </div>
+     </div>
+
+     <!-- Footer -->
+      <footer>
+        <span>&copy; 2025 Ruhlan Rzayev. All rights reserved.</span>
+      </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

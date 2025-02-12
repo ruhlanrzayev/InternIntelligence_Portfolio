@@ -1,0 +1,368 @@
+body {
+  position: relative;
+}
+body .fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}
+body .fixed i {
+  font-size: 2em;
+}
+
+.super-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 25px;
+}
+.super-container .logo span {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.super-container .menu {
+  display: none;
+}
+.super-container .bars-menu {
+  display: block;
+}
+.super-container .toggleMenu {
+  display: none;
+}
+.super-container .toggleMenu.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  right: 25px;
+  padding: 20px;
+  background-color: white;
+}
+.super-container .toggleMenu.open a {
+  margin: 10px 0;
+  color: black;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#profile .image {
+  margin: 20px 0;
+}
+#profile .image img {
+  border-radius: 50%;
+  width: 30vh;
+}
+#profile .text-content {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+#profile .text-content span {
+  font: bold 1em "Poppins", sans-serif;
+  color: rgb(107, 107, 107);
+}
+#profile .text-content h1 {
+  font: bold 1.2em "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#profile .text-content p {
+  font: bold 1em "Poppins", sans-serif;
+  color: rgb(107, 107, 107);
+}
+#profile .text-content button {
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font: bold 1em "Poppins", sans-serif;
+}
+
+.top-text {
+  margin-top: 50px;
+}
+.top-text h2 {
+  font-size: 1.5em;
+  text-align: left;
+}
+.top-text span {
+  display: none;
+  color: rgb(107, 107, 107);
+  text-transform: uppercase;
+  font-size: 0.5em;
+  text-align: left;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#about .content {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#about .content .text-content p {
+  text-align: center;
+  color: rgb(107, 107, 107);
+  font-size: 0.75em;
+  text-align: center;
+}
+#about .content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+#about .content .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 25px;
+  padding: 20px 60px;
+  transition: 200ms ease-in-out;
+  scale: 0.9;
+}
+#about .content .cards .card * {
+  margin: 5px 0;
+}
+#about .content .cards .card img {
+  max-width: 35px;
+}
+#about .content .cards .card p {
+  text-align: center;
+  color: gray;
+}
+#about .content .cards .card:active {
+  box-shadow: 0 0 10px violet;
+  border: 2px solid purple;
+  scale: 0.85;
+}
+#about .content .cards .card:active *:not(img, p) {
+  color: purple;
+}
+
+#experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#experience .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px 0;
+}
+#experience .content .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#experience .content .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 2px solid gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  scale: 1.05;
+  transition: 200ms ease-in-out;
+}
+#experience .content .row .col img {
+  max-width: 10px !important;
+}
+#experience .content .row #html:active {
+  border: 2px solid rgb(230, 194, 127);
+  box-shadow: 0 0 5px rgb(214, 155, 46);
+  scale: 1;
+}
+#experience .content .row #css:active, #experience .content .row #ts:active, #experience .content .row #jq:active {
+  border: 2px solid rgb(154, 154, 225);
+  box-shadow: 0 0 5px rgb(125, 125, 255);
+  scale: 1;
+}
+#experience .content .row #sass:active {
+  border: 2px solid #e296bc;
+  box-shadow: 0 0 5px #CC6699;
+  scale: 1;
+}
+#experience .content .row #js:active, #experience .content .row #ejs:active {
+  border: 2px solid rgb(255, 215, 140);
+  box-shadow: 0 0 5px rgb(248, 245, 86);
+  scale: 1;
+}
+#experience .content .row #bs:active {
+  border: 2px solid #9f5adb;
+  box-shadow: 0 0 5px #8B0BFC;
+  scale: 1;
+}
+#experience .content .row #twc:active {
+  border: 2px solid #9aeeef;
+  box-shadow: 0 0 5px #0FB8BA;
+  scale: 1;
+}
+#experience .content .row #mongodb:active {
+  border: 2px solid #9ce78f;
+  box-shadow: 0 0 5px #4FA63F;
+  scale: 1;
+}
+#experience .content .row #react:active {
+  border: 2px solid #a3dfea;
+  box-shadow: 0 0 5px #0CDAFF;
+  scale: 1;
+}
+#experience .content .row #njs:active {
+  border: 2px solid gray;
+  box-shadow: 0 0 5px black;
+  scale: 1;
+}
+#experience .content .row #nodejs:active {
+  border: 2px solid #b7e0a9;
+  box-shadow: 0 0 5px #7AB268;
+  scale: 1;
+}
+#experience .content .row #npm:active {
+  border: 2px solid #e08181;
+  box-shadow: 0 0 5px #CD3E3D;
+  scale: 1;
+}
+#experience .content .row #git:active {
+  border: 2px solid #e38e7f;
+  box-shadow: 0 0 5px #F05539;
+  scale: 1;
+}
+#experience .content .row #json:active {
+  border: 2px solid #aee08f;
+  box-shadow: 0 0 5px #6DBF39;
+  scale: 1;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects .content {
+  margin: 40px 0;
+}
+#projects .content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+#projects .content .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 25px;
+  padding: 20px 40px;
+}
+#projects .content .cards .card * {
+  margin: 10px 0;
+}
+#projects .content .cards .card img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+#projects .content .cards .card .buttons button {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: 200ms ease-in-out;
+  font-weight: bold;
+}
+#projects .content .cards .card .buttons button:active {
+  background-color: black;
+  color: white;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact .content {
+  margin: 40px 0;
+}
+#contact .content .cards {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact .content .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  gap: 10px;
+}
+#contact .content .cards .card img {
+  max-width: 25px;
+}
+#contact .content form .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact .content form .form input, #contact .content form .form textarea {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#contact .content form .form textarea {
+  height: 200px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+footer span {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=style.css.map */

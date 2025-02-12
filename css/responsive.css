@@ -1,0 +1,341 @@
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .fixed {
+    position: fixed;
+    bottom: 20px !important;
+    right: 20px !important;
+    cursor: pointer;
+  }
+  .fixed img {
+    max-width: 50px !important;
+  }
+  .super-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+    padding: 50px 25px;
+  }
+  .super-container .logo span {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .super-container .menu {
+    display: inline !important;
+  }
+  .super-container .menu ul {
+    display: flex;
+    gap: 40px;
+  }
+  .super-container .menu ul li {
+    font-size: 1.5em;
+  }
+  .super-container .menu ul li a {
+    color: black;
+    position: relative;
+    transition: 0.2s ease-in-out;
+  }
+  .super-container .menu ul li a:hover {
+    text-decoration: none;
+    color: rgb(145.25, 145.25, 145.25);
+  }
+  .super-container .menu ul li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 1px;
+    background-color: rgb(145.25, 145.25, 145.25);
+  }
+  .super-container .bars-menu {
+    display: none;
+  }
+  #profile {
+    width: 1240px;
+    margin: 20vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    gap: 10vh !important;
+  }
+  #profile .image img {
+    border-radius: 50%;
+    width: 50vh !important;
+  }
+  #profile .text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #profile .text-content span {
+    font: bold 1.5em "Poppins", sans-serif;
+    color: rgb(107, 107, 107);
+  }
+  #profile .text-content h1 {
+    font: bold 2.5em "Poppins", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  #profile .text-content p {
+    font: bold 1.8em "Poppins", sans-serif;
+    color: rgb(107, 107, 107);
+  }
+  #profile .text-content button {
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font: bold 1.2em "Poppins", sans-serif;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+  }
+  #profile .text-content button:hover {
+    background-color: black;
+    color: white;
+  }
+  .top-text {
+    width: 1240px;
+    text-align: left;
+    margin: 40px auto;
+  }
+  .top-text h2 {
+    font-size: 2em;
+    text-align: left;
+  }
+  .top-text span {
+    display: inline;
+    color: rgb(107, 107, 107);
+    text-transform: uppercase;
+    font-size: 0.75em;
+    text-align: left;
+  }
+  #about {
+    width: 1240px;
+    margin: 80px auto;
+    height: 96vh;
+    padding-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #about .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #about .content .text-content p {
+    text-align: center;
+    width: 920px !important;
+    font-size: 1em !important;
+    color: rgb(107, 107, 107);
+  }
+  #about .content .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    gap: 100px;
+    margin: 40px auto;
+  }
+  #about .content .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 25px;
+    padding: 20px 80px;
+    transition: 200ms ease-in-out;
+    scale: 0.95;
+  }
+  #about .content .cards .card * {
+    margin: 5px 0;
+  }
+  #about .content .cards .card img {
+    max-width: 35px;
+  }
+  #about .content .cards .card p {
+    text-align: center;
+    color: gray;
+  }
+  #about .content .cards .card:hover {
+    box-shadow: 0 0 10px violet;
+    border: 2px solid purple;
+    scale: 1;
+  }
+  #about .content .cards .card:hover *:not(img, p) {
+    color: purple;
+  }
+  #experience {
+    width: 1240px;
+    margin: 80px auto;
+    height: 96vh;
+    padding-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #experience .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0;
+  }
+  #experience .content .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    gap: 50px;
+  }
+  #experience .content .row .col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    scale: 1.2;
+    transition: 200ms ease-in-out;
+  }
+  #experience .content .row .col img {
+    max-width: 25px;
+  }
+  #experience .content .row #html:hover {
+    border: 2px solid rgb(230, 194, 127);
+    box-shadow: 0 0 5px rgb(214, 155, 46);
+    scale: 1.3;
+  }
+  #experience .content .row #css:hover, #experience .content .row #ts:hover, #experience .content .row #jq:hover {
+    border: 2px solid rgb(154, 154, 225);
+    box-shadow: 0 0 5px rgb(125, 125, 255);
+    scale: 1.3;
+  }
+  #experience .content .row #sass:hover {
+    border: 2px solid #e296bc;
+    box-shadow: 0 0 5px #CC6699;
+    scale: 1.3;
+  }
+  #experience .content .row #js:hover, #experience .content .row #ejs:hover {
+    border: 2px solid rgb(255, 215, 140);
+    box-shadow: 0 0 5px rgb(248, 245, 86);
+    scale: 1.3;
+  }
+  #experience .content .row #bs:hover {
+    border: 2px solid #9f5adb;
+    box-shadow: 0 0 5px #8B0BFC;
+    scale: 1.3;
+  }
+  #experience .content .row #twc:hover {
+    border: 2px solid #9aeeef;
+    box-shadow: 0 0 5px #0FB8BA;
+    scale: 1.3;
+  }
+  #experience .content .row #mongodb:hover {
+    border: 2px solid #9ce78f;
+    box-shadow: 0 0 5px #4FA63F;
+    scale: 1.3;
+  }
+  #experience .content .row #react:hover {
+    border: 2px solid #a3dfea;
+    box-shadow: 0 0 5px #0CDAFF;
+    scale: 1.3;
+  }
+  #experience .content .row #njs:hover {
+    border: 2px solid gray;
+    box-shadow: 0 0 5px black;
+    scale: 1.3;
+  }
+  #experience .content .row #nodejs:hover {
+    border: 2px solid #b7e0a9;
+    box-shadow: 0 0 5px #7AB268;
+    scale: 1.3;
+  }
+  #experience .content .row #npm:hover {
+    border: 2px solid #e08181;
+    box-shadow: 0 0 5px #CD3E3D;
+    scale: 1.3;
+  }
+  #experience .content .row #git:hover {
+    border: 2px solid #e38e7f;
+    box-shadow: 0 0 5px #F05539;
+    scale: 1.3;
+  }
+  #experience .content .row #json:hover {
+    border: 2px solid #aee08f;
+    box-shadow: 0 0 5px #6DBF39;
+    scale: 1.3;
+  }
+  #projects {
+    width: 1240px !important;
+    margin: 80px auto !important;
+    height: 96vh !important;
+    padding-top: 4vh !important;
+  }
+  #projects .content .cards {
+    flex-direction: row !important;
+  }
+  #projects .content .cards .card {
+    width: 400px;
+    height: 500px;
+  }
+  #projects .content .cards .card img {
+    max-width: 300px;
+  }
+  #projects .content .cards .card h3 {
+    font-size: 2em;
+  }
+  #projects .content .cards .card .buttons button {
+    border-radius: 25px;
+    padding: 15px 25px;
+  }
+  #projects .content .cards .card .buttons button:hover {
+    background-color: black;
+    color: white;
+  }
+  #contact {
+    width: 1240px;
+    margin: 80px auto;
+    height: 96vh;
+    padding-top: 4vh;
+  }
+  #contact .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #contact .content .cards .card {
+    transition: 200ms ease-in-out;
+  }
+  #contact .content .cards .card:hover {
+    scale: 1.1;
+  }
+  #contact .content .form input {
+    width: 400px !important;
+  }
+  footer span {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
