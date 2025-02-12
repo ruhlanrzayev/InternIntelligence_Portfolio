@@ -166,7 +166,7 @@ body {
     margin: 5px 0;
   }
   #about .content .cards .card img {
-    max-width: 20px;
+    max-width: 35px;
   }
   #about .content .cards .card p {
     text-align: center;
@@ -218,7 +218,7 @@ body {
     transition: 200ms ease-in-out;
   }
   #experience .content .row .col img {
-    max-width: 25px;
+    max-width: 20px;
   }
   #experience .content .row #html:hover {
     border: 2px solid rgb(230, 194, 127);
