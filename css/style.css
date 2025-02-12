@@ -194,7 +194,7 @@ body .fixed i {
   transition: 200ms ease-in-out;
 }
 #experience .content .row .col img {
-  max-width: 10px !important;
+  max-width: 10px;
 }
 #experience .content .row #html:active {
   border: 2px solid rgb(230, 194, 127);
